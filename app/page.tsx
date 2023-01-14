@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { get } from '@vercel/edge-config';
-import { redirect } from 'next/navigation';
+import Image from "next/image"
+import { get } from "@vercel/edge-config"
+import { redirect } from "next/navigation"
 
-export const dynamic = 'force-dynamic',
-  runtime = 'edge';
+export const dynamic = "force-dynamic",
+  runtime = "edge"
 
 function TwitterIcon() {
   return (
@@ -26,7 +26,7 @@ function TwitterIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
 function GitHubIcon() {
@@ -50,7 +50,7 @@ function GitHubIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
 function LinkCard({
@@ -58,18 +58,18 @@ function LinkCard({
   title,
   image,
 }: {
-  href: string;
-  title: string;
-  image?: string;
+  href: string
+  title: string
+  image?: string
 }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center p-1 w-full rounded-md hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl"
+      className="flex items-center w-full max-w-3xl p-1 mb-3 transition-all bg-gray-100 rounded-md hover:scale-105"
     >
-      <div className="flex text-center w-full">
+      <div className="flex w-full text-center">
         <div className="w-10 h-10">
           {image && (
             <Image
@@ -81,42 +81,43 @@ function LinkCard({
             />
           )}
         </div>
-        <h2 className="flex justify-center items-center font-semibold w-full text-gray-700 -ml-10">
+        <h2 className="flex items-center justify-center w-full -ml-10 font-semibold text-gray-700">
           {title}
         </h2>
       </div>
     </a>
-  );
+  )
 }
 
 interface Data {
-  name: string;
-  avatar: string;
-  links: Link[];
-  socials: Social[];
+  name: string
+  description?: string
+  avatar: string
+  links: Link[]
+  socials: Social[]
 }
 
 interface Link {
-  href: string;
-  title: string;
-  image?: string;
+  href: string
+  title: string
+  image?: string
 }
 
 interface Social {
-  href: string;
-  title: string;
+  href: string
+  title: string
 }
 
 export default async function HomePage() {
-  const data: Data | undefined = await get('linktree');
+  const data: Data | undefined = await get("linktree")
 
   if (!data) {
     // not working yet https://github.com/vercel/next.js/issues/44232
-    redirect('https://linktr.ee/selenagomez');
+    redirect("https://linktr.ee/selenagomez")
   }
 
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
+    <div className="flex flex-col items-center justify-center w-full px-8 mx-auto mt-16">
       <Image
         priority
         className="rounded-full"
@@ -125,7 +126,8 @@ export default async function HomePage() {
         width={96}
         height={96}
       />
-      <h1 className="font-bold mt-4 mb-8 text-xl text-white">{data.name}</h1>
+      <h1 className="mt-4 text-xl font-bold text-white">{data.name}</h1>
+      <h2 className="mb-8 font-semibold text-gray-300">{data.description}</h2>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
@@ -138,14 +140,14 @@ export default async function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {social.href.includes('twitter') ? (
+            {social.href.includes("twitter") ? (
               <TwitterIcon />
-            ) : social.href.includes('github') ? (
+            ) : social.href.includes("github") ? (
               <GitHubIcon />
             ) : null}
           </a>
         ))}
       </div>
     </div>
-  );
+  )
 }

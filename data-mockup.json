@@ -1,19 +1,22 @@
 {
   "linktree": {
     "name": "Guilherme Martins",
+    "description": "Frontend Developer",
     "avatar": "https://github.com/guilhermemm-dev.png",
     "links": [
       {
         "title": "My Portfolio",
         "href": "https://guilhermemm.dev",
-        "image": "https://images2.imgbox.com/51/93/iZ15YpVV_o.png"
+        "image": "https://images2.imgbox.com/6f/61/RIcB6L2Z_o.jpg"
       },
       {
         "title": "GitHub Profile",
+        "image": "https://w7.pngwing.com/pngs/920/837/png-transparent-github-code-coding-development-programming-social-betterwork-social-icon.png",
         "href": "https://github.com/guilhermemm-dev"
       },
       {
         "title": "LinkedIn",
+        "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
         "href": "https://www.linkedin.com/in/guilhermemm-dev/"
       }
     ],
