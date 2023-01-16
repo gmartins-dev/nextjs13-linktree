@@ -1,6 +1,6 @@
 
 
-# A link-sharing application with Next.js 13, React, and styling with
+# A link-sharing application with Next.js 13, React, and styling with TailwindCSS.
 
 
 
