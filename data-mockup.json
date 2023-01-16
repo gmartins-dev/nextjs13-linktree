@@ -5,9 +5,19 @@
     "avatar": "https://github.com/guilhermemm-dev.png",
     "links": [
       {
-        "title": "My Portfolio",
+        "title": "Portfolio",
         "href": "https://guilhermemm.dev",
         "image": "https://images2.imgbox.com/6f/61/RIcB6L2Z_o.jpg"
+      },
+      {
+        "title": "CV/Resume",
+        "image": "https://cdn-icons-png.flaticon.com/512/5968/5968517.png",
+        "href": "https://guilhermemm.dev/cv"
+      },
+      {
+        "title": "LinkedIn",
+        "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+        "href": "https://www.linkedin.com/in/guilhermemm-dev/"
       },
       {
         "title": "GitHub Profile",
@@ -15,19 +25,37 @@
         "href": "https://github.com/guilhermemm-dev"
       },
       {
-        "title": "LinkedIn",
-        "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
-        "href": "https://www.linkedin.com/in/guilhermemm-dev/"
+        "title": "Usefull links to devs",
+        "image": "https://www.nicepng.com/png/full/380-3805219_firebase-for-android-resources-and-links-icon.png",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:6938141320154673152/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6938141320154673152%29"
+      },
+      {
+        "title": "Interview to Hardcode Podcast (in portuguese)",
+        "image": "https://spotlight.radiopublic.com/images/thumbnail?url=https%3A%2F%2Fd3t3ozftmdmh3i.cloudfront.net%2Fproduction%2Fpodcast_uploaded_nologo%2F2809589%2F2809589-1579640820475-f9c50a2444eb8.jpg",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:6984925952082386944/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6984925952082386944%29"
+      },
+      {
+        "title": "Article: Angular: how to get started? (in portuguese, will be translate soon)",
+        "image": "https://cdn.iconscout.com/icon/free/png-256/angular-226066.png",
+        "href": "https://www.linkedin.com/pulse/angular-por-onde-come%C3%A7ar-guilherme-martins-miranda/"
       }
     ],
     "socials": [
       {
-        "title": "Twitter",
-        "href": "#"
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/in/guilhermemm-dev"
       },
       {
         "title": "GitHub",
         "href": "https://github.com/guilhermemm-dev"
+      },
+      {
+        "title": "Email",
+        "href": "mailto:guilhermemm.dev@gmail.com"
+      },
+      {
+        "title": "Resume",
+        "href": "https://guilhermemm.dev/cv"
       }
     ]
   }
